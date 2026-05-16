@@ -87,15 +87,32 @@ Full specifications are in `design-system/DESIGN_SYSTEM.json` and `design-system
 ```
 earthworm-claude-skills/
 ├── skills/
-│   ├── earthworm-word.md       ← /earthworm-word slash command
-│   └── earthworm-pptx.md       ← /earthworm-pptx slash command
+│   ├── earthworm-word.md           ← /earthworm-word slash command
+│   └── earthworm-pptx.md           ← /earthworm-pptx slash command
 ├── design-system/
-│   ├── DESIGN_SYSTEM.json      ← Complete brand specification
+│   ├── DESIGN_SYSTEM.json          ← Complete brand specification
 │   ├── BRAND_IDENTITY_REPORT.md
-│   ├── cores.json              ← Colour palette with usage rules
-│   ├── tipografia.json         ← Typography styles
-│   └── master_slides.json      ← 14 PowerPoint layout specs
-├── install.sh                  ← Installer script
+│   ├── cores.json                  ← Colour palette with usage rules
+│   ├── tipografia.json             ← Typography styles
+│   └── master_slides.json          ← 14 PowerPoint layout specs
+├── templates/
+│   ├── relatorio_corporativo.docx
+│   ├── proposta_comercial.docx
+│   ├── caderno_campo_beneficiarios.docx
+│   ├── factsheet_programa.docx
+│   ├── boletim_campo_mensal.docx
+│   ├── email_corporativo.html
+│   ├── certificado_produtor.pptx
+│   ├── apresentacao_executiva.pptx
+│   ├── pitch_investidor.pptx
+│   ├── infografico_impacto.pptx
+│   ├── cartao_visita.pptx
+│   ├── banner_rollup.pptx          ← print at 90×200 cm
+│   └── social/
+│       ├── instagram_feed.pptx     ← 1080×1080 px (3 slides)
+│       ├── instagram_story.pptx    ← 1080×1920 px (2 slides)
+│       └── linkedin_post.pptx      ← 1200×628 px  (2 slides)
+├── install.sh                      ← Installer script
 └── README.md
 ```
 
