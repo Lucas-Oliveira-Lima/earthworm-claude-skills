@@ -1,0 +1,107 @@
+{
+  "empresa": "Earthworm Foundation",
+  "versao": "1.0",
+  "data": "2026-05-16",
+
+  "fonte_primaria": {
+    "familia": "Today Shop",
+    "tipo": "Proprietária",
+    "arquivos": "Font files/Today shop family font/",
+    "uso": "Títulos H1 e H2, citações impactantes, fatos numéricos, capas",
+    "fallback_word": "Arial Bold",
+    "pesos": [
+      "XLight", "XLightItalic",
+      "Light", "LightItalic",
+      "Regular", "Italic",
+      "Medium", "MediumItalic",
+      "Bold", "BoldItalic",
+      "Ultra", "UltraItalic"
+    ],
+    "nota": "Combina formas angulares (indústria) e curvas orgânicas (agricultura) — reflete a missão da EF"
+  },
+
+  "fonte_secundaria": {
+    "familia": "Heebo",
+    "tipo": "Gratuita — Google Fonts",
+    "arquivos": "Font files/Heebo_font/",
+    "uso": "Corpo de texto, subtítulos H3, parágrafos, legenda",
+    "fallback_word": "Calibri",
+    "pesos": {
+      "Thin": 100,
+      "Light": 300,
+      "Regular": 400,
+      "Medium": 500,
+      "Bold": 700,
+      "ExtraBold": 800,
+      "Black": 900
+    }
+  },
+
+  "estilos_word": {
+    "h1_capa": {
+      "fonte": "Today Shop Ultra",
+      "fallback": "Arial Bold",
+      "tamanho": "28-36pt",
+      "cor": "#E94F2D",
+      "alinhamento": "Esquerda ou Centro",
+      "uso": "Título principal de capa, primeira página do documento"
+    },
+    "h2_secao": {
+      "fonte": "Today Shop Bold",
+      "fallback": "Arial Bold",
+      "tamanho": "18-22pt",
+      "cor": "#E94F2D",
+      "alinhamento": "Esquerda",
+      "uso": "Títulos de seções principais (Introdução, Metodologia, etc.)"
+    },
+    "h3_subtitulo": {
+      "fonte": "Heebo Bold",
+      "fallback": "Calibri Bold",
+      "tamanho": "13-14pt",
+      "cor": "#3C3C3C",
+      "alinhamento": "Esquerda",
+      "uso": "Subtítulos e subseções"
+    },
+    "corpo": {
+      "fonte": "Heebo Regular",
+      "fallback": "Calibri",
+      "tamanho": "10-11pt",
+      "cor": "#3C3C3C",
+      "line_height": "1.5",
+      "espacamento_paragrafo": "6pt antes e depois",
+      "alinhamento": "Justificado",
+      "uso": "Todo o corpo de texto do documento"
+    },
+    "citacao": {
+      "fonte": "Today Shop Light Italic",
+      "fallback": "Arial Italic",
+      "tamanho": "14-20pt",
+      "cor": "#E94F2D",
+      "alinhamento": "Centro ou Esquerda",
+      "uso": "Frases de impacto, testemunhos, pull quotes"
+    },
+    "legenda": {
+      "fonte": "Heebo Regular",
+      "fallback": "Calibri",
+      "tamanho": "8-9pt",
+      "cor": "#7C7C7C",
+      "uso": "Legendas de figuras, tabelas, rodapé"
+    },
+    "destaque": {
+      "fonte": "Heebo Bold",
+      "fallback": "Calibri Bold",
+      "tamanho": "10-11pt",
+      "cor": "#E94F2D",
+      "uso": "Palavras-chave em negrito dentro do corpo de texto"
+    }
+  },
+
+  "regras_tipografia": [
+    "Nunca usar Today Shop abaixo de 12pt para leitura prolongada",
+    "Heebo Regular para todo corpo — nunca Today Shop no corpo",
+    "Mínimo 1.5 de line-height para corpo de texto",
+    "Instalar ambas as fontes antes de usar qualquer template",
+    "Documento em UK English para publicações externas",
+    "Fallbacks: Arial para Today Shop, Calibri para Heebo"
+  ]
+}

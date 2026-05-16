@@ -1,0 +1,112 @@
+{
+  "empresa": "Earthworm Foundation",
+  "versao": "1.0",
+  "data": "2026-05-16",
+  "descricao": "Especificação dos Master Slides para PowerPoint 16:9 (1920x1080px)",
+
+  "paleta_pptx": {
+    "primaria": "#E94F2D",
+    "escuro": "#3C3C3C",
+    "cinza_escuro": "#646464",
+    "cinza_medio": "#7C7C7C",
+    "cinza_claro": "#BCBCBC",
+    "fundo_claro": "#EDEDED",
+    "branco": "#FFFFFF"
+  },
+
+  "fontes_pptx": {
+    "titulos": "Today Shop Bold / Ultra (fallback: Arial Bold)",
+    "subtitulos": "Today Shop Regular (fallback: Arial)",
+    "corpo": "Heebo Regular (fallback: Calibri)",
+    "citacoes": "Today Shop Light Italic (fallback: Arial Italic)",
+    "numeros_impacto": "Today Shop Ultra (fallback: Arial Black)"
+  },
+
+  "elementos_constantes_todos_slides": {
+    "simbolo_ef": {
+      "posicao": "Canto superior esquerdo",
+      "tamanho": "~40x40px",
+      "nota": "Versão correspondente à cor do fundo do slide"
+    },
+    "breadcrumb_titulo": {
+      "posicao": "Centro-superior",
+      "fonte": "Heebo Regular",
+      "tamanho": "10pt",
+      "cor_fundo_claro": "#7C7C7C",
+      "cor_fundo_escuro": "#FFFFFF"
+    },
+    "numero_pagina": {
+      "posicao": "Canto superior direito",
+      "fonte": "Heebo Regular",
+      "tamanho": "10pt"
+    }
+  },
+
+  "master_slides": [
+    {
+      "id": 1,
+      "nome": "Master Capa",
+      "fundo": "#E94F2D",
+      "logo_versao": "Negativo (branco) — canto superior esquerdo",
+      "area_titulo": { "posicao": "Centro-inferior esquerdo", "largura": "70%", "altura": "40%" },
+      "fonte_titulo": "Today Shop Ultra, 48-60pt, #FFFFFF",
+      "fonte_subtitulo": "Heebo Light, 20-24pt, #FFFFFF",
+      "elementos_opcionais": ["Data", "Autor", "Programa/Departamento"]
+    },
+    {
+      "id": 2,
+      "nome": "Master Conteúdo Branco",
+      "fundo": "#FFFFFF",
+      "logo_versao": "Cor principal — canto superior esquerdo (pequeno, via breadcrumb)",
+      "area_titulo": { "posicao": "Superior esquerdo", "largura": "85%" },
+      "fonte_titulo": "Today Shop Bold, 28-32pt, #E94F2D",
+      "area_corpo": { "posicao": "Centro", "largura": "90%", "altura": "65%" },
+      "fonte_corpo": "Heebo Regular, 11pt, #3C3C3C",
+      "linha_divisoria": "2px solid #E94F2D abaixo do título"
+    },
+    {
+      "id": 3,
+      "nome": "Master Capítulo Escuro",
+      "fundo": "#3C3C3C",
+      "logo_versao": "Cor em escuro",
+      "area_titulo": { "posicao": "Centro ou Centro-esquerdo" },
+      "fonte_titulo": "Today Shop Bold, 40-48pt, #E94F2D",
+      "fonte_subtitulo": "Heebo Light, 20pt, #FFFFFF",
+      "uso": "Slide de transição entre capítulos/seções"
+    },
+    {
+      "id": 4,
+      "nome": "Master Fundo Cinza",
+      "fundo": "#EDEDED",
+      "logo_versao": "Cor em cinza",
+      "fonte_titulo": "Today Shop Bold, 28-32pt, #E94F2D",
+      "fonte_corpo": "Heebo Regular, 11pt, #3C3C3C"
+    },
+    {
+      "id": 5,
+      "nome": "Master Quote / Citação",
+      "fundo": "#E94F2D",
+      "fonte_citacao": "Today Shop Light Italic, 32-40pt, #FFFFFF",
+      "fonte_autor": "Heebo Regular, 14pt, #FFFFFF",
+      "elemento_aspas": "Aspas decorativas em #FFFFFF, opacidade 20%"
+    },
+    {
+      "id": 6,
+      "nome": "Master Fatos/Números",
+      "fundo": "#FFFFFF",
+      "fonte_numero": "Today Shop Ultra, 64-80pt, #3C3C3C",
+      "fonte_descricao": "Heebo Regular, 13pt, #3C3C3C",
+      "layout": "Grade 2x2 ou 3 colunas com linha laranja superior"
+    }
+  ],
+
+  "regras_master": [
+    "Nunca remover o símbolo EF do canto superior esquerdo",
+    "Sempre incluir número de página no canto superior direito",
+    "Fundo laranja: texto branco obrigatório",
+    "Fundo escuro: título laranja, subtítulo e corpo brancos",
+    "Fundo branco/cinza: título laranja, corpo preto corporativo",
+    "Fotos reais da EF — nunca stock photos genéricas",
+    "Ícones do pack EF — nunca ícones de outros sistemas"
+  ]
+}

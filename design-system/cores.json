@@ -1,0 +1,111 @@
+{
+  "empresa": "Earthworm Foundation",
+  "versao": "1.0",
+  "data": "2026-05-16",
+
+  "cor_primaria": {
+    "nome": "Earthworm Orange",
+    "hex": "#E94F2D",
+    "rgb": { "r": 233, "g": 79, "b": 45 },
+    "cmyk": { "c": 0, "m": 80, "y": 85, "k": 0 },
+    "pantone": null,
+    "uso_word": "Títulos H1/H2 (Today Shop), citações, destaques, bordas decorativas",
+    "uso_proibido": "Nunca para corpo de texto principal"
+  },
+
+  "cinzas_corporativos": [
+    {
+      "nome": "Black Corporate",
+      "hex": "#3C3C3C",
+      "rgb": { "r": 60, "g": 60, "b": 60 },
+      "cmyk": { "c": 0, "m": 0, "y": 0, "k": 90 },
+      "uso_word": "Texto principal, headings H3, corpo do documento"
+    },
+    {
+      "nome": "Dark Grey",
+      "hex": "#646464",
+      "rgb": { "r": 100, "g": 100, "b": 100 },
+      "cmyk": { "c": 0, "m": 0, "y": 0, "k": 75 },
+      "uso_word": "Texto secundário, subtítulos, ícones"
+    },
+    {
+      "nome": "Mid Grey",
+      "hex": "#7C7C7C",
+      "rgb": { "r": 124, "g": 124, "b": 124 },
+      "cmyk": { "c": 0, "m": 0, "y": 0, "k": 65 },
+      "uso_word": "Legendas, rodapé, notas"
+    },
+    {
+      "nome": "Light Grey",
+      "hex": "#BCBCBC",
+      "rgb": { "r": 188, "g": 188, "b": 188 },
+      "cmyk": { "c": 0, "m": 0, "y": 0, "k": 35 },
+      "uso_word": "Linhas divisórias, separadores, bordas de tabela"
+    },
+    {
+      "nome": "Very Light Grey",
+      "hex": "#EDEDED",
+      "rgb": { "r": 237, "g": 237, "b": 237 },
+      "cmyk": { "c": 0, "m": 0, "y": 0, "k": 10 },
+      "uso_word": "Fundo de seções alternadas, cabeçalho de tabelas secundárias"
+    },
+    {
+      "nome": "White",
+      "hex": "#FFFFFF",
+      "rgb": { "r": 255, "g": 255, "b": 255 },
+      "cmyk": { "c": 0, "m": 0, "y": 0, "k": 0 },
+      "uso_word": "Fundo padrão do documento, texto sobre fundo laranja"
+    }
+  ],
+
+  "cores_ilustracao": {
+    "aviso": "USO RESTRITO — exclusivo para ilustrações e design gráfico. NÃO usar em documentos corporativos padrão.",
+    "cores": [
+      { "nome": "Dark Chocolate", "hex": "#563E31" },
+      { "nome": "Brown", "hex": "#755240" },
+      { "nome": "Cream Beige", "hex": "#F0E2D6" },
+      { "nome": "Red", "hex": "#E63329" },
+      { "nome": "Salmon Coral", "hex": "#ED6B6C" },
+      { "nome": "Warm Orange", "hex": "#F08247" },
+      { "nome": "Soft Pink", "hex": "#F5B3C4" },
+      { "nome": "Yellow", "hex": "#FFE054" },
+      { "nome": "Gold Olive", "hex": "#C1892B" }
+    ]
+  },
+
+  "combinacoes_aprovadas": [
+    {
+      "nome": "Padrão documento",
+      "fundo": "#FFFFFF",
+      "texto": "#3C3C3C",
+      "destaque": "#E94F2D",
+      "uso": "Páginas de conteúdo padrão"
+    },
+    {
+      "nome": "Caixa de destaque laranja",
+      "fundo": "#E94F2D",
+      "texto": "#FFFFFF",
+      "uso": "Call-out boxes, destaques importantes"
+    },
+    {
+      "nome": "Fundo cinza claro",
+      "fundo": "#EDEDED",
+      "texto": "#3C3C3C",
+      "destaque": "#E94F2D",
+      "uso": "Seções alternadas, caixas informativas"
+    }
+  ],
+
+  "regras_acessibilidade": {
+    "contraste_minimo": "WCAG AA (4.5:1 para texto normal, 3:1 para texto grande)",
+    "combinacoes_aprovadas_contraste": [
+      "#3C3C3C sobre #FFFFFF — ✅ passa AAA",
+      "#FFFFFF sobre #E94F2D — ✅ passa AA",
+      "#FFFFFF sobre #3C3C3C — ✅ passa AAA"
+    ],
+    "combinacoes_proibidas": [
+      "#E94F2D sobre #FFFFFF para texto pequeno — verificar contraste",
+      "Nunca usar cor como único indicador de informação"
+    ]
+  }
+}
