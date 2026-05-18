@@ -1,0 +1,65 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 113.4 113.4" style="enable-background:new 0 0 113.4 113.4;" xml:space="preserve" width="113.4000015258789" height="113.4000015258789">
+<style type="text/css">
+	.st0{fill:#E64F2D;}
+	.st1{fill:#B9B9B9;}
+	.st2{fill:#7C7C7C;}
+	.st3{fill:#3C3C3C;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:none;}
+	.st6{fill:#E6E7E8;}
+	.st7{fill:#ED5C38;}
+	.st8{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st9{fill:#B88337;}
+	.st10{fill:#E4E4E3;}
+	.st11{fill:#F15B38;}
+	.st12{fill:none;stroke:#414042;stroke-width:0.6124;stroke-miterlimit:10;}
+	.st13{fill:#D6D7D6;}
+	.st14{fill:#CFD0D1;}
+	.st15{fill:#424143;}
+	.st16{fill:#E5E3E2;}
+	.st17{fill:#646565;}
+	.st18{fill:#DFDFDE;}
+	.st19{fill:#D5D6D5;}
+	.st20{fill:none;stroke:#E6E7E8;stroke-width:1.2332;stroke-linecap:round;stroke-miterlimit:10;}
+	.st21{fill:none;stroke:#E64F2D;stroke-width:6.1658;stroke-miterlimit:10;}
+	.st22{fill-rule:evenodd;clip-rule:evenodd;fill:#E64F2D;}
+	.st23{fill:#414042;}
+	.st24{fill:#828080;}
+	.st25{fill:#44423D;}
+	.st26{fill:#B1B3B6;}
+	.st27{fill:#77787B;}
+	.st28{clip-path:url(#SVGID_00000011747704350836168930000009448975429666305177_);}
+	.st29{fill:none;stroke:#414042;stroke-width:1.4339;stroke-linecap:round;stroke-miterlimit:10;}
+	.st30{fill:#494949;}
+	.st31{fill:#F86767;}
+	.st32{clip-path:url(#SVGID_00000106840420198784276730000001970495254467555479_);fill:#3C3C3C;}
+	.st33{fill:none;stroke:#B1B3B6;stroke-width:2.1048;stroke-miterlimit:10;}
+	.st34{fill:none;stroke:#FFFFFF;stroke-width:2.1048;stroke-miterlimit:10;}
+	.st35{fill:#F15A38;}
+	.st36{fill:none;stroke:#414042;stroke-width:1.0386;stroke-linecap:round;stroke-miterlimit:10;}
+	.st37{fill-rule:evenodd;clip-rule:evenodd;fill:#B9B9B9;}
+	.st38{fill:#E7512C;}
+	.st39{fill:#E2E2E1;}
+	.st40{fill:#D1D3D4;}
+	.st41{fill:#646464;}
+	.st42{fill:#BCBCBC;}
+	.st43{fill:#E94F2D;}
+	.st44{fill-rule:evenodd;clip-rule:evenodd;fill:#414042;}
+	.st45{fill-rule:evenodd;clip-rule:evenodd;fill:#77787B;}
+	.st46{fill:#E7E6E6;}
+</style>
+<g id="ICONS">
+	<g>
+		<path class="st3" d="M34.7,43V31.1h8.3v6l13.6-9.8L93,53.4l-5.3,7.3l-7.4-5.3v30.8H33.1V55.4l-7.4,5.3l-5.3-7.3L34.7,43z"/>
+		<g>
+			<path class="st35" d="M65.9,69.8l-0.8,2.1l3.9,1.4l0.8-2.1c1-3,0.6-6.4-1-9c-1.1-1.7-1.2-4.2-0.3-6.1l0.9-1.8l-3.7-1.8l-0.9,1.8     c-1.6,3.2-1.4,7.3,0.5,10.2C66.3,65.9,66.5,68,65.9,69.8z"/>
+			<path class="st35" d="M55.5,69.8l-0.8,2.1l3.9,1.4l0.8-2.1c1-3,0.6-6.4-1-9c-1.1-1.7-1.2-4.2-0.3-6.1l0.8-1.8l-3.7-1.8l-0.9,1.8     c-1.6,3.2-1.4,7.3,0.5,10.2C55.9,65.9,56.1,68,55.5,69.8z"/>
+			<path class="st35" d="M45.1,69.8l-0.8,2.1l3.9,1.4l0.8-2.1c1-3,0.6-6.4-1-9c-1.1-1.7-1.2-4.2-0.3-6.1l0.9-1.8l-3.7-1.8L44,54.2     c-1.6,3.2-1.4,7.3,0.5,10.2C45.5,65.9,45.7,68,45.1,69.8z"/>
+		</g>
+	</g>
+</g>
+<g id="INFOS">
+</g>
+</svg>

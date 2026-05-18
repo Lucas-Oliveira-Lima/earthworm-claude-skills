@@ -34,6 +34,120 @@ Cria apresentações PowerPoint com design corporativo completo da **Earthworm F
 
 ---
 
+## Catálogo de Assets
+
+**Base path (após instalação):**
+```python
+import os
+ASSETS_DIR = os.path.expanduser("~/.claude/commands/assets")
+```
+
+### Logos Principais
+
+| Asset | Caminho relativo a ASSETS_DIR | Uso |
+|-------|-------------------------------|-----|
+| Logo Earthworm (RGB) | `logos/logo_earthworm_rgb.png` | Cabeçalho, capa — fundo branco/claro |
+| Símbolo EF (RGB) | `logos/symbol_earthworm_rgb.png` | Watermark, cabeçalho de slide |
+| Brasão escuro | `logos/coat_of_arms_dark.png` | Documentos especiais, fundo claro |
+| Brasão branco | `logos/coat_of_arms_white.png` | Sobre fundo laranja ou escuro |
+
+### Logos de Programa
+
+| Programa | Arquivo | Variantes |
+|----------|---------|-----------|
+| CSE (iniciais) | `logos/programmes/cse/CSE-BLACK.png` | BLACK / COLOUR / WHITE |
+| CSE (nome completo) | `logos/programmes/cse/CSE_FULL_NAME_ORANGE.jpg` | BLACK / ORANGE / WHITE |
+| CSE (iniciais + nome) | `logos/programmes/cse/CSE_INITIAL_AND_FULL_NAME_ORANGE.jpg` | BLACK / ORANGE / WHITE |
+| Landscape | `logos/programmes/landscape/Landscape-colour.jpg` | black / colour |
+
+### Diagramas
+
+| Asset | Caminho | Descrição |
+|-------|---------|-----------|
+| Chain Reaction | `diagrams/chain_reaction.png` | Diagrama de reação em cadeia |
+| Implementation | `diagrams/implementation.png` | Diagrama de implementação |
+| Innovation | `diagrams/innovation_bg_grey.png` | Diagrama de inovação (fundo cinza) |
+
+### Ícones (`assets/icons/`)
+
+Todos os ícones estão em `icons/` — 103 arquivos SVG e PNG.
+
+**Pessoas:**
+`business-man-woman.png`, `business.png`, `farmer-man-woman.png`, `people.png`, `smallholders.png`, `worker-man-woman.png`, `forester.svg`, `logger.svg`
+
+**Commodities:**
+`palmoil.png`, `coffee.png`, `cocoa.png`, `cotton.svg`, `soy.svg`, `rubber.svg`, `timber.svg`, `coconut.png`, `avocado.svg`, `corn.svg`, `cereal.svg`, `paddy-rice.svg`, `wheat.svg`, `potato.svg`, `tomato.svg`, `mango.svg`, `beets.svg`, `Sugar cane.svg`, `paper.png`, `viscose.svg`, `textile.svg`, `charcoal.svg`
+
+**Natureza:**
+`forest.svg`, `forest.png`, `deciduous forest.svg`, `mangroves.svg`, `soil.svg`, `landscape.svg`, `pine forest.svg`, `forest-north.svg`, `ecosystem.svg`, `watering-plants.svg`, `seeds.svg`
+
+**Indústria:**
+`factory.png`, `mill.svg`, `mill.png`, `refinery.png`, `sawmill.svg`, `pulp-and-paper.svg`, `paper-reel.svg`, `supply-chain.svg`, `chip-imported.svg`, `grain elevator.svg`
+
+**Ações / Conceitos:**
+`research.svg`, `report.svg`, `strategy.svg`, `strategy-review.svg`, `strategy-workshop.svg`, `policy.svg`, `education.svg`, `online-education.svg`, `change.svg`, `challenge.svg`, `benefits.svg`, `community.svg`, `dialog.svg`, `review.svg`, `carbon.svg`, `deforestation-hcv.svg`, `no-forced-labor.svg`, `child labour.svg`, `improving-living-conditions.svg`
+
+**Outros:**
+`calendar.svg`, `calendar-event.svg`, `mail.svg`, `search.svg`, `video.svg`, `website.svg`, `notebook.svg`, `book.svg`, `technology.svg`, `satellite.png`, `virtual-reality.svg`, `funder.svg`, `funder-donor.svg`, `stationery.svg`
+
+### Ilustrações de Domínio (com título)
+
+Pasta: `illustrations/domains/with-title/`
+
+| Domínio | Arquivo |
+|---------|---------|
+| Earthworm Foundation | `Earthworm.jpg` |
+| Full Supply Chain | `Full_supply_chain.jpg` |
+| Living Soils | `Living_Soils.jpg` |
+| Productive Forests | `Productive_forests.jpg` |
+| Resilient Farmers | `Resilient_Farmers.jpg` |
+| Respected Workers | `Respected_workers.jpg` |
+| Stable Climate | `Stable_Climate.jpg` |
+| Teeming Oceans | `Teeming_Oceans.jpg` |
+| Thriving Communities | `Thriving_Communities.jpg` |
+
+### Ilustrações de Domínio (sem título — para sobrepor texto)
+
+Pasta: `illustrations/domains/without-title/`
+
+| Domínio | Arquivo |
+|---------|---------|
+| Earthworm Foundation | `Earthworm_without_title.jpg` |
+| Full Supply Chain | `Full_supply_chain_without_title.jpg` |
+| Living Soils | `Living_soils_without_title.jpg` |
+| Productive Forests | `Productive_forests_without_title.jpg` |
+| Resilient Farmers | `Resilient_farmers_without_title.jpg` |
+| Respected Workers | `Respected_workers_without_title.jpg` |
+| Stable Climate | `Stable_climate_without_title.jpg` |
+| Teeming Oceans | `Teeming_oceans_without_title.jpg` |
+| Thriving Communities | `Thriving_communities_without_title.jpg` |
+
+### Ilustrações de Cadeia de Suprimentos
+
+| Asset | Caminho |
+|-------|---------|
+| Supply Chain completa (cor) | `illustrations/supply-chain/supply_chain_full_colour.jpg` |
+| Supply Chain completa (P&B) | `illustrations/supply-chain/supply_chain_black_white.jpg` |
+| CSE highlight | `illustrations/supply-chain/programmes/CSE_supply_chain.jpg` |
+| Kumacaya highlight | `illustrations/supply-chain/programmes/Kumacaya_supply_chain.jpg` |
+| Landscape highlight | `illustrations/supply-chain/programmes/Landscape_supply_chain.jpg` |
+| Person to Person highlight | `illustrations/supply-chain/programmes/P2P_supply_chain.jpg` |
+| Respect highlight | `illustrations/supply-chain/programmes/Respect_supply_chain.jpg` |
+| Rurality highlight | `illustrations/supply-chain/programmes/Rurality_supply_chain.jpg` |
+| Starling highlight | `illustrations/supply-chain/programmes/Starling_supply_chain.jpg` |
+
+### Elementos Separados da Supply Chain
+
+Pasta: `illustrations/supply-chain/elements/`
+
+`01-BRAND.png`, `02-Businessman.png`, `03-Factory.png`, `04-Worker.png`, `05-Refinery.png`, `06-Worker.png`, `07-Worker.png`, `08-Mill.png`, `09-Farmer.png`, `10-Community.png`, `11-Forest.png`, `12-Satelite.png`
+
+### Ilustração Landscape
+
+`illustrations/landscape/ValueChains_landscape.jpg` — Ilustração panorâmica de cadeias de valor 2021
+
+---
+
 ## Layouts Master Slides (14 layouts)
 
 ### 1. Capa Opção 1 — Título Curto
@@ -76,6 +190,7 @@ Fundo: #3C3C3C (cinza muito escuro)
 
 ### 6. Capítulo com Ilustração de Domínio
 - Fundo escuro, título à esquerda, ilustração do domínio à direita
+- Usar ilustrações de `illustrations/domains/without-title/` para sobrepor texto
 - Domínios disponíveis: Resilient Farmers, Productive Forests, Living Soils,
   Thriving Communities, Respected Workers, Stable Climate, Teeming Oceans
 
@@ -124,7 +239,7 @@ Fundo completo #E94F2D
 Cabeçalho: [Símbolo EF] ——— [Título do documento] ——— [Número de página]
 ```
 
-- Símbolo EF no canto superior esquerdo (sempre)
+- Símbolo EF no canto superior esquerdo (sempre) — usar `logos/symbol_earthworm_rgb.png`
 - Breadcrumb de navegação no centro do cabeçalho (em laranja ou cinza)
 - Número de página no canto superior direito
 - Links e URLs sempre em #E94F2D
@@ -141,29 +256,6 @@ Cabeçalho: [Símbolo EF] ——— [Título do documento] ——— [Número de
 | CSE              | /CSE              | earthworm.org/cse             |
 | Person to Person | /Person to Person | earthworm.org                 |
 | Respect          | /Respect          | earthworm.org/respect         |
-
----
-
-## Ícones Disponíveis (uso em slides)
-
-**Pessoas:** Business, Farmer, Worker, People, Smallholder
-**Commodities:** Palm Oil, Coffee, Cocoa, Cotton, Soy, Rubber, Timber, Coconut, Avocado...
-**Natureza:** Forest, Deciduous Forest, Mangroves, Soil, Landscape
-**Indústria:** Factory, Mill, Refinery, Sawmill, Businesses
-**Ações:** Research, Report, Strategy, Policy, Education, Change
-
-Todos em `Ícones/0_all_icons_PNG/PNG/` — formato SVG e PNG
-
----
-
-## Ilustrações Disponíveis
-
-- **Domínios com título:** `Illustration files/Domain/Ilustration files -withtitles/`
-- **Domínios sem título:** `Illustration files/Domain/Ilustration files - withouttitles/`
-- **Cadeia de produção colorida:** `Illustration files/Supply chain illustration/Full colour/`
-- **Cadeia de produção P&B:** `Illustration files/Supply chain illustration/Black and white/`
-- **Por programa:** CSE, Kumacaya, Landscape, P2P, Respect, Rurality, Starling
-- **Landscape illustration:** `Illustration files/Landscape illustrations/`
 
 ---
 
@@ -193,7 +285,7 @@ Todos em `Ícones/0_all_icons_PNG/PNG/` — formato SVG e PNG
 
 ## Manutenção
 
-Actualizado em: 2026-05-16
-Versão: 1.0
+Actualizado em: 2026-05-17
+Versão: 1.1
 Fonte: Brand Guidelines Earthworm Foundation
 Responsável: Equipa de Comunicações

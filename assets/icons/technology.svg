@@ -1,0 +1,76 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 113.4 113.4" style="enable-background:new 0 0 113.4 113.4;" xml:space="preserve" width="113.4000015258789" height="113.4000015258789">
+<style type="text/css">
+	.st0{fill:#E64F2D;}
+	.st1{fill:#B9B9B9;}
+	.st2{fill:#7C7C7C;}
+	.st3{fill:#3C3C3C;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:none;}
+	.st6{fill:#E6E7E8;}
+	.st7{fill:#ED5C38;}
+	.st8{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st9{fill:#B88337;}
+	.st10{fill:#E4E4E3;}
+	.st11{fill:#F15B38;}
+	.st12{fill:none;stroke:#414042;stroke-width:0.6124;stroke-miterlimit:10;}
+	.st13{fill:#D6D7D6;}
+	.st14{fill:#CFD0D1;}
+	.st15{fill:#424143;}
+	.st16{fill:#E5E3E2;}
+	.st17{fill:#646565;}
+	.st18{fill:#DFDFDE;}
+	.st19{fill:#D5D6D5;}
+	.st20{fill:none;stroke:#E6E7E8;stroke-width:1.2332;stroke-linecap:round;stroke-miterlimit:10;}
+	.st21{fill:none;stroke:#E64F2D;stroke-width:6.1658;stroke-miterlimit:10;}
+	.st22{fill-rule:evenodd;clip-rule:evenodd;fill:#E64F2D;}
+	.st23{fill:#414042;}
+	.st24{fill:#828080;}
+	.st25{fill:#44423D;}
+	.st26{fill:#B1B3B6;}
+	.st27{fill:#77787B;}
+	.st28{clip-path:url(#SVGID_00000090277744449067968390000003564507801258724541_);}
+	.st29{fill:none;stroke:#414042;stroke-width:1.4339;stroke-linecap:round;stroke-miterlimit:10;}
+	.st30{fill:#494949;}
+	.st31{fill:#F86767;}
+	.st32{clip-path:url(#SVGID_00000094601106356646978090000006986637566289141909_);fill:#3C3C3C;}
+	.st33{fill:none;stroke:#B1B3B6;stroke-width:2.1048;stroke-miterlimit:10;}
+	.st34{fill:none;stroke:#FFFFFF;stroke-width:2.1048;stroke-miterlimit:10;}
+	.st35{fill:#F15A38;}
+	.st36{fill:none;stroke:#414042;stroke-width:1.0386;stroke-linecap:round;stroke-miterlimit:10;}
+	.st37{fill-rule:evenodd;clip-rule:evenodd;fill:#B9B9B9;}
+	.st38{fill:#E7512C;}
+	.st39{fill:#E2E2E1;}
+	.st40{fill:#D1D3D4;}
+	.st41{fill:#646464;}
+	.st42{fill:#BCBCBC;}
+	.st43{fill:#E94F2D;}
+	.st44{fill-rule:evenodd;clip-rule:evenodd;fill:#414042;}
+	.st45{fill-rule:evenodd;clip-rule:evenodd;fill:#77787B;}
+	.st46{fill:#E7E6E6;}
+</style>
+<g id="ICONS">
+	<circle class="st1" cx="56.7" cy="56.4" r="24.7"/>
+	<path class="st3" d="M74.2,55.6h-13v-3h9.6v-6.2c2.2-0.3,4-2,4.6-4.2v-2.6c-0.5-2.2-2.3-3.8-4.6-4.2v-8.1H42.6v8.1   c-2.2,0.3-4,2-4.6,4.2v2.6c0.5,2.2,2.3,3.8,4.6,4.2v6.2h9.6v3H37.9v24v1.3h1.3h36.3v-24v-1.3H74.2z M54.8,55.6v-3h3.7v3H54.8z"/>
+	<g>
+		<polygon class="st3" points="59.4,83.4 69.8,83.4 59.4,91.9   "/>
+		<polygon class="st3" points="54.8,83.4 44.4,83.4 54.8,91.9   "/>
+	</g>
+	<g>
+		<polygon class="st0" points="53,27.3 45.6,27.3 53,21.2   "/>
+		<g>
+			<polygon class="st0" points="60.4,27.3 53,27.3 60.4,21.2    "/>
+			<polygon class="st0" points="67.8,27.3 60.4,27.3 67.8,21.2    "/>
+		</g>
+	</g>
+	<polygon class="st0" points="63.3,43.1 50.1,43.1 50.1,45.7 63.3,45.7 63.3,45.7 63.3,43.1  "/>
+	<polygon class="st1" points="56.7,65.6 55.1,62.9 53.6,60.2 56.7,60.2 59.8,60.2 58.3,62.9  "/>
+	<g>
+		<path class="st1" d="M61,35.6c0.5-0.5,1.4-0.5,1.9,0c0.2,0.2,0.4,0.6,0.4,0.9c0,0.4-0.1,0.7-0.4,0.9c-0.2,0.3-0.6,0.4-0.9,0.4    c-0.4,0-0.7-0.1-0.9-0.4c-0.2-0.2-0.4-0.6-0.4-0.9C60.6,36.1,60.8,35.8,61,35.6z"/>
+		<path class="st1" d="M51.4,37.8c-0.3,0-0.7-0.1-0.9-0.4c-0.2-0.2-0.4-0.6-0.4-0.9c0-0.3,0.1-0.7,0.4-0.9c0.5-0.5,1.4-0.5,1.9,0    c0.2,0.2,0.4,0.6,0.4,0.9c0,0.4-0.1,0.7-0.4,0.9C52.1,37.7,51.8,37.8,51.4,37.8z"/>
+	</g>
+</g>
+<g id="INFOS">
+</g>
+</svg>

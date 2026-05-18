@@ -37,34 +37,116 @@ A Earthworm Foundation é uma ONG ambiental global (antiga The Forest Trust) que
 | Legenda       | Heebo         | Regular (400) | 8-9pt        | #7C7C7C      |
 | Destaque      | Heebo         | Bold (700)    | 10-11pt      | #E94F2D      |
 
-**Fontes disponíveis em:** `Font files/Today shop family font/` e `Font files/Heebo_font/`
 **Fallback Word:** Today Shop → Arial Bold | Heebo → Calibri
 
 ---
 
-## Logotipos Disponíveis
+## Catálogo de Assets
 
-| Arquivo | Versão | Uso no Word |
-|---------|--------|-------------|
-| EARTHWORM_LOGO_RVB.ai | Full color (laranja) | Cabeçalho sobre fundo branco/cinza |
-| EARTHWORM_LOGO_CMJN.ai | CMYK (para impressão) | Documentos para impressão |
-| Coat_of_arms_print_dark.png | Brasão escuro | Documentos especiais |
-| Coat_of_arms_white.png | Brasão branco | Sobre fundo laranja |
+**Base path (após instalação):**
+```python
+import os
+ASSETS_DIR = os.path.expanduser("~/.claude/commands/assets")
+```
 
-**Regras de posicionamento:**
+### Logos Principais (PNG — prontos para uso no python-docx)
+
+| Asset | Caminho relativo a ASSETS_DIR | Uso no documento |
+|-------|-------------------------------|------------------|
+| Logo Earthworm (RGB) | `logos/logo_earthworm_rgb.png` | Cabeçalho — fundo branco/claro |
+| Símbolo EF (RGB) | `logos/symbol_earthworm_rgb.png` | Rodapé como watermark |
+| Brasão escuro | `logos/coat_of_arms_dark.png` | Documentos especiais, fundo claro |
+| Brasão branco | `logos/coat_of_arms_white.png` | Sobre fundo laranja ou escuro |
+
+**Regras de posicionamento do logo:**
 - Sempre no canto **superior esquerdo** do cabeçalho
 - Zona de segurança: 1x a largura do "E" em todos os lados
 - Tamanho mínimo no documento: 30mm de largura; ideal: 40mm
 - NUNCA no canto direito; NUNCA rotacionado
 
----
+### Logos de Programa
 
-## Elementos Visuais
+| Programa | Arquivo | Variantes |
+|----------|---------|-----------|
+| CSE (iniciais) | `logos/programmes/cse/CSE-BLACK.png` | BLACK / COLOUR / WHITE |
+| CSE (nome completo) | `logos/programmes/cse/CSE_FULL_NAME_ORANGE.jpg` | BLACK / ORANGE / WHITE |
+| CSE (iniciais + nome) | `logos/programmes/cse/CSE_INITIAL_AND_FULL_NAME_ORANGE.jpg` | BLACK / ORANGE / WHITE |
+| Landscape | `logos/programmes/landscape/Landscape-colour.jpg` | black / colour |
 
-- **Símbolo EF:** Ícone de 3 elementos (superfície, minhoca, solo) — usar no rodapé como watermark
-- **Ícones:** 60+ ícones SVG/PNG em `Ícones/0_all_icons_PNG/PNG/`
-- **Ilustrações:** Ilustrações de domínios e cadeia de suprimentos disponíveis
-- **Padrão de fundo:** Cinza muito claro (#EDEDED) para áreas de destaque
+### Diagramas
+
+| Asset | Caminho | Descrição |
+|-------|---------|-----------|
+| Chain Reaction | `diagrams/chain_reaction.png` | Diagrama de reação em cadeia |
+| Implementation | `diagrams/implementation.png` | Diagrama de implementação |
+| Innovation | `diagrams/innovation_bg_grey.png` | Diagrama de inovação (fundo cinza) |
+
+### Ícones (`assets/icons/`)
+
+Todos os ícones estão em `icons/` — 103 arquivos SVG e PNG.
+
+**Pessoas:**
+`business-man-woman.png`, `business.png`, `farmer-man-woman.png`, `people.png`, `smallholders.png`, `worker-man-woman.png`, `forester.svg`, `logger.svg`
+
+**Commodities:**
+`palmoil.png`, `coffee.png`, `cocoa.png`, `cotton.svg`, `soy.svg`, `rubber.svg`, `timber.svg`, `coconut.png`, `avocado.svg`, `corn.svg`, `cereal.svg`, `paddy-rice.svg`, `wheat.svg`, `potato.svg`, `tomato.svg`, `mango.svg`, `beets.svg`, `Sugar cane.svg`, `paper.png`, `viscose.svg`, `textile.svg`, `charcoal.svg`
+
+**Natureza:**
+`forest.svg`, `forest.png`, `deciduous forest.svg`, `mangroves.svg`, `soil.svg`, `landscape.svg`, `pine forest.svg`, `forest-north.svg`, `ecosystem.svg`, `watering-plants.svg`, `seeds.svg`
+
+**Indústria:**
+`factory.png`, `mill.svg`, `mill.png`, `refinery.png`, `sawmill.svg`, `pulp-and-paper.svg`, `paper-reel.svg`, `supply-chain.svg`
+
+**Ações / Conceitos:**
+`research.svg`, `report.svg`, `strategy.svg`, `policy.svg`, `education.svg`, `change.svg`, `community.svg`, `dialog.svg`, `carbon.svg`, `no-forced-labor.svg`, `benefits.svg`, `improving-living-conditions.svg`
+
+### Ilustrações de Domínio (com título)
+
+Pasta: `illustrations/domains/with-title/`
+
+| Domínio | Arquivo |
+|---------|---------|
+| Earthworm Foundation | `Earthworm.jpg` |
+| Full Supply Chain | `Full_supply_chain.jpg` |
+| Living Soils | `Living_Soils.jpg` |
+| Productive Forests | `Productive_forests.jpg` |
+| Resilient Farmers | `Resilient_Farmers.jpg` |
+| Respected Workers | `Respected_workers.jpg` |
+| Stable Climate | `Stable_Climate.jpg` |
+| Teeming Oceans | `Teeming_Oceans.jpg` |
+| Thriving Communities | `Thriving_Communities.jpg` |
+
+### Ilustrações de Domínio (sem título — para sobrepor texto)
+
+Pasta: `illustrations/domains/without-title/`
+
+| Domínio | Arquivo |
+|---------|---------|
+| Earthworm Foundation | `Earthworm_without_title.jpg` |
+| Full Supply Chain | `Full_supply_chain_without_title.jpg` |
+| Living Soils | `Living_soils_without_title.jpg` |
+| Productive Forests | `Productive_forests_without_title.jpg` |
+| Resilient Farmers | `Resilient_farmers_without_title.jpg` |
+| Respected Workers | `Respected_workers_without_title.jpg` |
+| Stable Climate | `Stable_climate_without_title.jpg` |
+| Teeming Oceans | `Teeming_oceans_without_title.jpg` |
+| Thriving Communities | `Thriving_communities_without_title.jpg` |
+
+### Ilustrações de Cadeia de Suprimentos
+
+| Asset | Caminho |
+|-------|---------|
+| Supply Chain completa (cor) | `illustrations/supply-chain/supply_chain_full_colour.jpg` |
+| Supply Chain completa (P&B) | `illustrations/supply-chain/supply_chain_black_white.jpg` |
+| CSE highlight | `illustrations/supply-chain/programmes/CSE_supply_chain.jpg` |
+| Landscape highlight | `illustrations/supply-chain/programmes/Landscape_supply_chain.jpg` |
+| Rurality highlight | `illustrations/supply-chain/programmes/Rurality_supply_chain.jpg` |
+| Respect highlight | `illustrations/supply-chain/programmes/Respect_supply_chain.jpg` |
+| P2P highlight | `illustrations/supply-chain/programmes/P2P_supply_chain.jpg` |
+
+### Ilustração Landscape
+
+`illustrations/landscape/ValueChains_landscape.jpg` — Ilustração panorâmica de cadeias de valor 2021
 
 ---
 
@@ -72,7 +154,7 @@ A Earthworm Foundation é uma ONG ambiental global (antiga The Forest Trust) que
 
 ### Cabeçalho
 ```
-[Logo EarthwormFoundation]    [Código País | Endereço | E-mail: info@earthworm.org]
+[Logo EarthwormFoundation — logos/logo_earthworm_rgb.png]    [Código País | Endereço | E-mail: info@earthworm.org]
 ```
 
 ### Estilos de Parágrafo
@@ -83,7 +165,7 @@ A Earthworm Foundation é uma ONG ambiental global (antiga The Forest Trust) que
 
 ### Rodapé
 ```
-[Símbolo EF em cinza claro]              [www.earthworm.org | Página X de Y]
+[Símbolo EF em cinza claro — logos/symbol_earthworm_rgb.png]    [www.earthworm.org | Página X de Y]
 ```
 
 ---
@@ -122,7 +204,7 @@ A Earthworm Foundation é uma ONG ambiental global (antiga The Forest Trust) que
 
 ## Manutenção
 
-Actualizado em: 2026-05-16
-Versão: 1.0
+Actualizado em: 2026-05-17
+Versão: 1.1
 Fonte: Brand Guidelines Earthworm Foundation (externo + interno)
 Responsável: Equipa de Comunicações
