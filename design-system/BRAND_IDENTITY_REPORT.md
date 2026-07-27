@@ -1,6 +1,6 @@
 # Relatório de Identidade Visual — Earthworm Foundation
 
-**Data:** 2026-05-16 | **Versão:** 1.0 | **Fonte:** Brand Guidelines Oficiais (Externo + Interno)
+**Data:** 2026-07-27 | **Versão:** 1.1 | **Fonte:** Brand Guidelines Oficiais (Externo + Interno)
 
 ---
 
@@ -179,6 +179,10 @@ Pasta: `Illustration files/Domain/`
 - **Cabeçalho constante:** Símbolo EF | Breadcrumb título | Número de página
 - **Cor de links:** #E94F2D
 - **14 layouts documentados:** Capa, Capítulo, Texto, Foto, Quote, Fatos
+- **Tabelas de dados:** sempre tabela nativa do PowerPoint (`slide.shapes.add_table`), nunca caixas
+  de texto simulando grade — ver `skills/earthworm-pptx.md` (helper `add_table_ef()`). Painéis de
+  "Fatos/Números" (número grande + legenda) são exceção: continuam sendo caixas de texto, pois são
+  decorativos, não dados tabulares.
 
 ---
 
@@ -238,3 +242,4 @@ Pasta: `Illustration files/Domain/`
 | Versão | Data | Descrição |
 |--------|------|-----------|
 | v1.0 | 2026-05-16 | Criação inicial — extraído dos Brand Guidelines externos e internos |
+| v1.1 | 2026-07-27 | Adicionada regra de tabelas nativas do PowerPoint (evita tabelas simuladas com caixas de texto) |

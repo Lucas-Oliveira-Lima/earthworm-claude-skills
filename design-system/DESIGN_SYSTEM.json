@@ -5,7 +5,7 @@
   "email": "info@earthworm.org",
   "hq": "Chemin de Chantavril 2-4, 1260 Nyon, Switzerland",
   "data_criacao": "2026-05-16",
-  "versao": "1.0",
+  "versao": "1.1",
   "idioma_padrao": "English (UK)",
 
   "logotipos": {
@@ -140,7 +140,14 @@
       "Texto + Fatos Opção 1 (ícone + colunas + números)",
       "Texto + Fatos Opção 2 (colunas densas)",
       "Foto + Fatos"
-    ]
+    ],
+    "tabelas_de_dados": {
+      "regra": "Conteúdo tabular real (cabeçalho + múltiplas linhas: cronogramas, orçamentos, comparativos, indicadores) deve sempre usar o objeto de tabela nativo do python-pptx (slide.shapes.add_table), nunca caixas de texto/retângulos simulando grade — isso impede edição manual no PowerPoint (selecionar célula, arrastar coluna, inserir linha).",
+      "excecao": "Painéis de 'Fatos/Números' (número grande + legenda curta) são elementos tipográficos decorativos, não tabelas de dados, e continuam sendo caixas de texto soltas",
+      "estilo_cabecalho": { "fundo": "#E94F2D", "fonte": "Heebo Bold, branco" },
+      "estilo_corpo": { "fundo_alternado": ["#FFFFFF", "#EDEDED"], "fonte": "Heebo Regular, #3C3C3C" },
+      "implementacao": "Helper add_table_ef() em skills/earthworm-pptx.md"
+    }
   },
 
   "programas": [
@@ -166,8 +173,11 @@
   },
 
   "versioning": {
-    "versao": "1.0",
-    "data": "2026-05-16",
-    "responsavel": "Equipa de Comunicações — Earthworm Foundation"
+    "versao": "1.1",
+    "data": "2026-07-27",
+    "responsavel": "Equipa de Comunicações — Earthworm Foundation",
+    "changelog": [
+      { "versao": "1.1", "data": "2026-07-27", "descricao": "Adicionada regra de tabelas nativas do PowerPoint (apresentacao_ppt.tabelas_de_dados)" }
+    ]
   }
 }
