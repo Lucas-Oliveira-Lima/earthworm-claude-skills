@@ -1,7 +1,7 @@
 {
   "empresa": "Earthworm Foundation",
-  "versao": "1.0",
-  "data": "2026-05-16",
+  "versao": "1.1",
+  "data": "2026-07-27",
   "descricao": "Especificação dos Master Slides para PowerPoint 16:9 (1920x1080px)",
 
   "paleta_pptx": {
@@ -99,6 +99,15 @@
       "layout": "Grade 2x2 ou 3 colunas com linha laranja superior"
     }
   ],
+
+  "tabelas_nativas_pptx": {
+    "regra": "Conteúdo tabular (cabeçalho + múltiplas linhas: cronogramas, orçamentos, comparativos, indicadores) deve sempre usar o objeto de tabela nativo do python-pptx (slide.shapes.add_table), nunca caixas de texto/retângulos simulando grade — isso impede edição manual no PowerPoint.",
+    "excecao": "Painéis de 'Fatos/Números' (master 6) com número grande + legenda curta são elementos tipográficos decorativos, não tabelas de dados, e continuam sendo caixas de texto soltas.",
+    "estilo_cabecalho": { "fundo": "#E94F2D", "fonte": "Heebo Bold, branco" },
+    "estilo_corpo": { "fundo_alternado": ["#FFFFFF", "#EDEDED"], "fonte": "Heebo Regular, #3C3C3C" },
+    "implementacao": "Ver helper add_table_ef() em skills/earthworm-pptx.md",
+    "banding_padrao_powerpoint": "Desligar (table.first_row = False; table.horz_banding = False) para a marca EF prevalecer sobre o tema azul padrão"
+  },
 
   "regras_master": [
     "Nunca remover o símbolo EF do canto superior esquerdo",

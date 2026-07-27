@@ -233,6 +233,107 @@ Fundo completo #E94F2D
 
 ---
 
+## Tabelas de Dados — SEMPRE Nativas do PowerPoint
+
+**Regra crítica:** qualquer conteúdo tabular (comparativos, cronogramas, orçamentos, listas
+linha×coluna com cabeçalho) **tem de ser criado com o objeto de tabela nativo do python-pptx**
+(`slide.shapes.add_table(...)`). **Nunca** simular uma tabela posicionando retângulos e caixas de
+texto lado a lado — isso quebra a edição manual no PowerPoint (usuário não consegue clicar numa
+célula, arrastar bordas de coluna, usar "Inserir linha", redimensionar tudo junto, etc.).
+
+Diferença importante:
+- **Painel de "Fatos/Números"** (layout 6, 12, 13, 14 — número grande + legenda curta, 2-4 colunas
+  decorativas) → continua sendo caixas de texto soltas, é um elemento tipográfico/visual, não dados
+  em grade.
+- **Tabela de dados de verdade** (cabeçalho + múltiplas linhas, ex.: cronograma, orçamento,
+  comparativo de programas, lista de indicadores) → **tabela nativa obrigatória**.
+
+### Helper pronto (cole no script de geração)
+
+```python
+from pptx.util import Cm, Pt
+from pptx.dml.color import RGBColor
+from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
+
+EW_ORANGE = (233, 79, 45)
+EW_BLACK  = (60, 60, 60)
+EW_BGREY  = (237, 237, 237)
+EW_WHITE  = (255, 255, 255)
+
+def add_table_ef(slide, left_cm, top_cm, width_cm, height_cm,
+                  header, rows, col_widths_cm=None, font_size=10):
+    """Cria uma tabela NATIVA do PowerPoint com a marca Earthworm Foundation.
+
+    header: list[str]        — títulos das colunas
+    rows:   list[list[str]]  — linhas de dados (mesma quantidade de colunas do header)
+    """
+    n_rows, n_cols = len(rows) + 1, len(header)
+    shape = slide.shapes.add_table(
+        n_rows, n_cols, Cm(left_cm), Cm(top_cm), Cm(width_cm), Cm(height_cm)
+    )
+    table = shape.table
+
+    # Remove o "banding" azul padrão do tema do PowerPoint para a marca EF prevalecer
+    table.first_row = False
+    table.horz_banding = False
+
+    if col_widths_cm:
+        for i, w in enumerate(col_widths_cm):
+            table.columns[i].width = Cm(w)
+
+    def style_cell(cell, text, bold, color, fill, size):
+        cell.margin_left = cell.margin_right = Cm(0.25)
+        cell.margin_top = cell.margin_bottom = Cm(0.12)
+        cell.vertical_anchor = MSO_ANCHOR.MIDDLE
+        cell.fill.solid()
+        cell.fill.fore_color.rgb = RGBColor(*fill)
+        p = cell.text_frame.paragraphs[0]
+        p.alignment = PP_ALIGN.LEFT
+        run = p.add_run()
+        run.text = str(text)
+        run.font.name = "Heebo"
+        run.font.size = Pt(size)
+        run.font.bold = bold
+        run.font.color.rgb = RGBColor(*color)
+
+    # Cabeçalho — fundo Earthworm Orange, texto branco em negrito
+    for c, label in enumerate(header):
+        style_cell(table.cell(0, c), label, True, EW_WHITE, EW_ORANGE, font_size + 1)
+
+    # Corpo — linhas alternadas branco / cinza muito claro, texto Black Corporate
+    for r, row_data in enumerate(rows, start=1):
+        row_fill = EW_WHITE if r % 2 else EW_BGREY
+        for c, value in enumerate(row_data):
+            style_cell(table.cell(r, c), value, False, EW_BLACK, row_fill, font_size)
+
+    return table
+```
+
+**Uso típico:**
+```python
+add_table_ef(
+    slide, left_cm=1.5, top_cm=4.5, width_cm=30.9, height_cm=8,
+    header=["Programa", "Região", "Produtores", "Status"],
+    rows=[
+        ["Rurality", "Brasil", "1.200", "Em andamento"],
+        ["CSE", "Sudeste Asiático", "3.400", "Concluído"],
+    ],
+)
+```
+
+### Ajuste fino (opcional)
+
+- Se aparecerem bordas cinza padrão do PowerPoint indesejadas, aplique o estilo
+  "No Style, Table Grid" via XML (`tbl.tblPr.set('firstRow', '0')` já cobre o banding; para bordas
+  finas consistentes com a marca, defina `cell.fill` em todas as células como acima — isso já
+  resolve a maioria dos casos).
+- Larguras de coluna: sempre definir explicitamente (`col_widths_cm`) somando à largura total da
+  tabela — o PowerPoint não redistribui automaticamente ao redimensionar.
+- Nunca deixar uma tabela nativa sem `col_widths_cm` definido quando o conteúdo tiver comprimentos
+  de texto muito diferentes entre colunas.
+
+---
+
 ## Elementos Constantes em Todos os Slides
 
 ```
@@ -285,7 +386,7 @@ Cabeçalho: [Símbolo EF] ——— [Título do documento] ——— [Número de
 
 ## Manutenção
 
-Actualizado em: 2026-05-17
-Versão: 1.1
+Actualizado em: 2026-07-27
+Versão: 1.2 — adicionada regra de tabelas nativas do PowerPoint (helper add_table_ef)
 Fonte: Brand Guidelines Earthworm Foundation
 Responsável: Equipa de Comunicações
